@@ -13,6 +13,12 @@ ${TIMEOUT}          3000
 Example of connecting to Lambdatest via Robot Framework
 	[Timeout]   ${TIMEOUT}
 	Click element  id=color
+    AppiumLibrary.Background App  -1
+    Sleep  10 seconds
+    Activate App  com.apple.mobilesafari
+    Sleep  10 seconds
+    Activate App  proverbial
+    Sleep  10 seconds
 	Click element  id=Text
 	Click element  id=toast
 		

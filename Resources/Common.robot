@@ -39,7 +39,7 @@ Open test app
     EXCEPT
         ${APP_ID}=    Set Variable    lt://proverbial-ios
     END
-    ${REMOTE_URL}=   Set Variable       https://%{LT_USERNAME}:%{LT_ACCESS_KEY}@${REMOTE_URL}/wd/hub
+    ${REMOTE_URL}=   Set Variable       https://xyz:xyz@mobile-hub.lambdatest.com/wd/hub
 
     Open Application  ${REMOTE_URL}  platformName=ios  platformVersion=${version}  deviceName=${deviceName}  visual=${visual}  network=${network}  devicelog=${devicelog}  isRealMobile=${isRealMobile}  app=${APP_ID}  name=LT_Appium_Robot_App_iOS  build=LT_Appium_Robot_App_Automation
 
